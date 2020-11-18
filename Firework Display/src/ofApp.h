@@ -1,6 +1,9 @@
 #pragma once
 
 #include "ofMain.h"
+#include "Particle.hpp"
+#include "ParticleSystem.hpp"
+typedef pair<Particle, ParticleSystem> ppp;
 
 class ofApp : public ofBaseApp{
 
@@ -21,4 +24,6 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
+    vector<ppp> particleSystems;
+    glm::vec2 gravity;
 };

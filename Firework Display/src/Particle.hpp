@@ -1,29 +1,22 @@
+//referenced from the particle example taught in class
 #pragma once
 #include "ofMain.h"
 
 class Particle {
-
-  public:
-
-    Particle(float _h, float _s, float _b, int _r, float _particleType, float _x0, float _y0, float _z0);
-
-    void particleColorSet();
+    
+public:
+    
+    Particle();
+    Particle(glm::vec2 _pos, glm::vec2 _vel, float _mass);
+    
+    void applyForce(glm::vec2 force);
     void update();
-    void addForce(ofVec3f force);
-    void statusChange();
-    ofVec3f position;
-    ofVec3f velocity;
-    ofVec3f acceleration;
-    ofVec3f gravity;
+    void draw();
+    
+    glm::vec2 pos, vel, acc;
     float mass;
-    int radius;
-    float h;
-    float s;
-    float b;
-    float friction;
-    float lifetime;
-    int status;
-    float particleType;
-    ofFloatColor col;
-
+    
+    float bornTime;
+    
 };
+

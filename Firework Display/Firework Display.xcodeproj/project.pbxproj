@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B5B170E02564E41600566E73 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5B170DE2564E41600566E73 /* Particle.cpp */; };
+		B5B170E62564F39A00566E73 /* ParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5B170E42564F39A00566E73 /* ParticleSystem.cpp */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		B5B170DE2564E41600566E73 /* Particle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
 		B5B170DF2564E41600566E73 /* Particle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Particle.hpp; sourceTree = "<group>"; };
+		B5B170E42564F39A00566E73 /* ParticleSystem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleSystem.cpp; sourceTree = "<group>"; };
+		B5B170E52564F39A00566E73 /* ParticleSystem.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleSystem.hpp; sourceTree = "<group>"; };
 		E42962AC2163EDD300A6A9E2 /* ofCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofCamera.cpp; path = ../../of_v0.11.0_osx_release/libs/openFrameworks/3d/ofCamera.cpp; sourceTree = SOURCE_ROOT; };
 		E42962AD2163EDD300A6A9E2 /* ofMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofMesh.h; path = ../../of_v0.11.0_osx_release/libs/openFrameworks/3d/ofMesh.h; sourceTree = SOURCE_ROOT; };
 		E42962AE2163EDD300A6A9E2 /* ofNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofNode.h; path = ../../of_v0.11.0_osx_release/libs/openFrameworks/3d/ofNode.h; sourceTree = SOURCE_ROOT; };
@@ -538,6 +541,8 @@
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				B5B170DE2564E41600566E73 /* Particle.cpp */,
 				B5B170DF2564E41600566E73 /* Particle.hpp */,
+				B5B170E42564F39A00566E73 /* ParticleSystem.cpp */,
+				B5B170E52564F39A00566E73 /* ParticleSystem.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -640,6 +645,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B170E62564F39A00566E73 /* ParticleSystem.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				B5B170E02564E41600566E73 /* Particle.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
