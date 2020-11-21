@@ -86,6 +86,7 @@ void ofApp::update(){
             double d = pow((pow(b1.posx-b2.posx,2)+pow(b1.posy-b2.posy,2)), 0.5);
             if (d<=b1.radius+b2.radius){
                 double angle = atan2(abs(b2.posy-b1.posy), abs(b2.posx-b1.posx));
+                cout<<angle<<endl;
                 double vx1 = cos(angle)*b1.vx+sin(angle)*b1.vy;
                 double vy1 = sin(angle)*(-b1.vx)+cos(angle)*b1.vy;
                 double vx2 = cos(angle)*b2.vx+sin(angle)*b2.vy;
