@@ -9,9 +9,9 @@
 #include "cmath"
 
 Clock::Clock(double _basex, double _basey){
-    Dot d1 = Dot(100, M_PI/240, _basex, _basey);
-    Dot d2 = Dot(80, M_PI/14400, _basex, _basey);
-    Dot d3 = Dot(40, M_PI/345600, _basex, _basey);
+    Dot d1 = Dot(100, M_PI/480, _basex, _basey);
+    Dot d2 = Dot(80, M_PI/28800, _basex, _basey);
+    Dot d3 = Dot(40, M_PI/691200, _basex, _basey);
     dots.push_back(d1);
     dots.push_back(d2);
     dots.push_back(d3);
