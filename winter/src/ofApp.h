@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "snow.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -20,5 +21,13 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
+    
+    ofImage background;
+    glm::vec2 bgPos;
+    ofImage winter;
+    ofImage autumn;
+    glm::vec2 windowPos;
+    snow s;
+    bool start;
+    double transparency = 0;
 };
