@@ -21,7 +21,8 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
+    int mode = 0;
     ofSpherePrimitive sphere;
     ofEasyCam cam;
-    vector<ofBoxPrimitive> boxes;
+    ofBoxPrimitive box;
 };
